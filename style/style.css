@@ -284,6 +284,7 @@ section
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
+        margin-top: 10px;
         .progress-bar
         {
             display: flex;
@@ -323,22 +324,47 @@ section
                     {
                         width: 90%;
                     }
-                    /*Be sure to change the below data for different skills*/
-                    /* .html
+                    .JS
                     {
-                        width: 90%;
+                        width: 70%;
                     }
-                    .html
+                    .React
                     {
-                        width: 90%;
+                        width: 30%;
                     }
-                    .html
+                    .MongoDB
                     {
-                        width: 90%;
-                    } */  
+                        width: 60%;
+                    }  
+                    .SB
+                    {
+                        width: 60%;
+                    }
+                    .Py
+                    {
+                        width: 50%;
+                    }
+                    .Java
+                    {
+                        width: 70%;
+                    }
                 }
             }
         }
+    }
+}
+
+.lang-stats
+{
+    .langBox
+    {
+        border: 1px solid var(--color-secondary);
+        border-radius: 20px;
+        margin-top: 10px;
+        width: 65%;
+        min-height: 5rem;
+        padding: 10px;
+        text-align: center;
     }
 }
 
@@ -460,7 +486,7 @@ section
     padding-top: 3.5rem;
     .left-contact{
         /* flex: 2; */
-        width: 50%;
+        width: 70%;
         h4{
             text-align: center;
             margin-top: 1rem;
