@@ -63,7 +63,7 @@ a
 
 header
 {
-    min-height: 100vh;
+    height: 100vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -391,12 +391,17 @@ section
             transition: all .4s ease-in-out;
             h3
             {
-                font-size: 1.5rem;
+                font-size: 3rem;
                 color: var(--color-white);
-                align-items: center;
+                text-align: center;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    color: var(--color-grey-4);
+                }
             }
             .icons
             {
+                padding-top: 10px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -425,6 +430,10 @@ section
                     }
                   }  
             }
+            .languages
+            {
+                margin-top: 10px;
+            }
         }
     }
 }
@@ -445,14 +454,24 @@ section
 
 .contact-content-con
 {
+    /* display: flex; */
     display: flex;
+    justify-content: center;
     padding-top: 3.5rem;
     .left-contact{
-        flex: 2;
+        /* flex: 2; */
+        width: 50%;
         h4{
+            text-align: center;
             margin-top: 1rem;
             font-size: 2rem;
             text-transform: uppercase;
+        }
+        .description
+        {
+            margin: 1rem 0;
+            line-height: 2rem;
+            text-align: center;
         }
         p{
             margin: 1rem 0;
@@ -460,8 +479,11 @@ section
         }
         .contact-info
         {
+            padding-left: 25%;
             .contact-item
             {
+                width: 70%;
+                align-self: center;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
